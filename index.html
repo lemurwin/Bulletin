@@ -132,7 +132,8 @@
   width:30%;
   min-width:200px;
   height:100%;
-  display:inline-flex;
+  display:flex;
+  flex-direction:column;
   border:1px solid black;
 }
 #contentnav{
@@ -197,6 +198,12 @@
   width:55%;
   background-color: lightgrey;
   margin-left: 10px;
+}
+#entertext{
+  display:flex;
+  align-items: flex-end;
+  position:relative;
+  margin-top:100%;
 }
   </style>
 </head>
@@ -273,7 +280,9 @@
           <li>What's up?</li>
           <li>Hello Friend</li>
         </ul>
-
+        <div id="entertext">
+        <input type="text" name="Text" /><button>Send</button>
+      </div>
 
         </div>
     </div>
